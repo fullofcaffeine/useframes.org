@@ -1,0 +1,85 @@
+.layout-logo
+  margin: 0 auto
+  text-align: center
+  color: #344146
+
+.layout-logo-triangle-container
+  display: inline-block
+  width: 150px
+  border: 3px solid #344146
+  height: 230px
+  position: relative
+  background: linear-gradient(#F13167, #FFB800)
+
+.layout-logo-triangle
+  position: absolute
+  top: 50%
+  left: 50%
+  border: 3px solid #344146
+  animation-name: triangle-rotate
+  animation-iteration-count: infinite
+
+  &.is-a
+    -webkit-transform: rotate(45deg)
+    margin: -50px
+    width: 100px
+    height: 100px
+    animation-duration: 600ms
+    background: #FAF298
+    animation-name: triangle-rotate-inverted
+
+  &.is-b
+    margin: -32px
+    width: 64px
+    height: 64px
+    animation-duration: 900ms
+    background: #F84B4B
+
+  &.is-c
+    -webkit-transform: rotate(45deg)
+    width: 38px
+    height: 38px
+    margin: -19px
+    animation-duration: 1200ms
+    background: #4EE496
+    animation-name: triangle-rotate-inverted
+
+  &.is-d
+    width: 22px
+    height: 22px
+    margin: -11px
+    animation-duration: 1500ms
+    background: #B1A4DA
+
+  &.is-e
+    width: 10px
+    height: 10px
+    margin: -5px
+    animation-duration: 1800ms
+
+  &.is-f
+    border: 1px solid #344146
+    width: 2px
+    height: 2px
+    margin: -1px
+    animation-duration: 2100ms
+    animation-name: triangle-rotate-inverted
+
+.layout-logo-name
+  font-size: 50px
+
+@keyframes triangle-rotate
+  0%
+    transform: rotate(0)
+  50%
+    transform: rotate(45deg)
+  100%
+    transform: rotate(90deg)
+
+@keyframes triangle-rotate-inverted
+  0%
+    transform: rotate(0)
+  50%
+    transform: rotate(-45deg)
+  100%
+    transform: rotate(-90deg)
